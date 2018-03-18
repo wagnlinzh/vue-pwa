@@ -104,7 +104,8 @@ const webpackConfig = merge(baseWebpackConfig, {
       filename: 'service-worker.js',
       staticFileGlobs: ['dist/**/*.{js,html,css}'],
       minify: false,
-      stripPrefix: 'dist/'
+      stripPrefix: 'dist/',
+      ignoreUrlParametersMatching:[/dealId|projectId|poiId/]
     })
   ]
 })

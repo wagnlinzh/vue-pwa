@@ -37,11 +37,11 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["index.html","c78af38f4b336a2472b0e47df7d7f6ab"],["service-worker.js","1904c8f1539f654be0ce2aef5ac1bfc1"],["static/css/app.137728d3269fc060e28432a6ab4df15a.css","46077f35b5add195f03810629411b39a"],["static/js/app.e583019c37b14537e7ee.js","c6dc97790fbba467323d64d46443b44a"],["static/js/manifest.50631ab0d7cd5c8bb176.js","fbcb4aba61fb371fb150bb55547846c2"],["static/js/vendor.ec32ee41a680c0612ed9.js","d022a1479a456387b4886131e4e8ea66"]];
+var precacheConfig = [["index.html","c78af38f4b336a2472b0e47df7d7f6ab"],["service-worker.js","2af9797929500b7ac4534414c2c5b4d2"],["static/css/app.137728d3269fc060e28432a6ab4df15a.css","46077f35b5add195f03810629411b39a"],["static/js/app.e583019c37b14537e7ee.js","c6dc97790fbba467323d64d46443b44a"],["static/js/manifest.50631ab0d7cd5c8bb176.js","fbcb4aba61fb371fb150bb55547846c2"],["static/js/vendor.ec32ee41a680c0612ed9.js","d022a1479a456387b4886131e4e8ea66"]];
 var cacheName = 'sw-precache-v3-pwa-vue111-' + (self.registration ? self.registration.scope : '');
 
 
-var ignoreUrlParametersMatching = [/^utm_/];
+var ignoreUrlParametersMatching = [/dealId|projectId|poiId/];
 
 
 
