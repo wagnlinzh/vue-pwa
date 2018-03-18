@@ -14,7 +14,7 @@
       return {
         msg: 'Vue & PWA Log | 问题纪要',
         todoList: [
-          '主文档离线,或者域名离线之后,无法更新,max-age控制的更新,在那段时间内无法更新',
+          '主文档离线,需要设置ignoreUrlParametersMatching 将参数匹配',
           'service-worker 未更新?',
           '第一次还是会走缓存,刷新才会更新',
           '根路径被缓存,不带参数的 index.html 被缓存,都需要等待 max-age 才更新'
