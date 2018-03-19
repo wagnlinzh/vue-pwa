@@ -46,13 +46,13 @@
             title: ' 关于 Soft Update & HTTP 缓存',
             content: [
               'Service Worker 控制着整个 App 的离线缓存。 为了避免 Service Worker 缓存自己导致死锁无法升级，通常将 sw.js 本身的缓存直接交给 HTTP 服务器缓存。',
-              '但 sw.js 并不是页面的脚本资源，它的更新由浏览器触发（多次 register() 同一个 Service Worker 不会触发更新），并应用了特殊的缓存策略。',
-              ' Service Worker 的更新算法（这里是指 Soft Update）只在下列情况会被触发：',
-              '- 注册了一个新的 URL 不同的 Service Worker',
+              '但 sw.js 并不是页面的脚本资源，它的更新由浏览器触发（多次 register() 同一个 Service Worker 不会触发更新)，并应用了特殊的缓存策略。',
+              'Service Worker 的更新算法（这里是指 Soft Update）只在下列情况会被触发：',
+              '注册了一个新的 URL 不同的 Service Worker',
               '功能事件被触发，比如 push, sync 等',
               '页面导航，包括 fetch（此时请求为 non-subresource request，因此也会触发 Soft Update）',
               '触发更新算法后，浏览器会检查并遵循 sw.js 的文件缓存设置，比如max-age。 ',
-              '- 如果不设置 sw.js 的 HTTP 缓存，每次页面加载该文件都会被请求',
+              '如果不设置 sw.js 的 HTTP 缓存，每次页面加载该文件都会被请求',
               '如果设置了 10s 的缓存，则 10s 内浏览器不会再次访问服务器。',
               '到此为止这些行为都是标准的 HTTP 缓存。'
             ]
