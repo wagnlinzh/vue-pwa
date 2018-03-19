@@ -105,7 +105,8 @@ const webpackConfig = merge(baseWebpackConfig, {
       staticFileGlobs: ['dist/**/*.{js,html,css}'],
       minify: false,
       stripPrefix: 'dist/',
-      ignoreUrlParametersMatching:[/dealId|projectId|poiId/]
+      ignoreUrlParametersMatching:[/dealId|projectId|poiId/],
+      importScripts:['manifest']
     })
   ]
 })

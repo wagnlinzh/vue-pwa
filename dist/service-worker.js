@@ -266,3 +266,5 @@ self.addEventListener('fetch', function(event) {
 
 
 
+importScripts("/vue-pwa/dist/manifest");
+
