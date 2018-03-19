@@ -32,7 +32,7 @@
               title: '# 关于主文档的离线',
               content: [
                 '主文档离线,需要设置ignoreUrlParametersMatching 将参数匹配',
-                '主文档离线之后的更新问题: 会有很长时间的延迟',
+                '主文档离线之后的更新问题: 会有很长时间的延迟 ## 不会, 之所以会,是因为之前操作中把 service-worker 也缓存了导致的 ,service-worker 文件不应该缓存. 唯一版本更新的 凭证',
                 '确定下问题,是由于 github-page 导致的更新慢还是 主文档'
               ]
             },
