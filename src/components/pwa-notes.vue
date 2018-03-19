@@ -29,8 +29,8 @@
         msg: 'Vue & PWA Log | 问题纪要',
         todoList: [
           {
-            title: '关于主文档的离线',
-            content: ['主文档离线,需要设置ignoreUrlParametersMatching 将参数匹配']
+            title: '# 关于主文档的离线',
+            content: ['主文档离线,需要设置ignoreUrlParametersMatching 将参数匹配', '主文档离线之后的更新问题: 会有很长时间的延迟', '确定下问题,是由于 github-page 导致的更新慢还是 主文档']
           },
           {
             title: '关于 service worker 的更新',
