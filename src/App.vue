@@ -1,24 +1,24 @@
 <template>
     <div id="app">
         <header>
-            <span>Hello PWA, Hello wanglinzhizhi</span>
+            <span>PWA  Notes</span>
         </header>
         <main>
             <img src="./assets/logo.png"
                  alt="Vue.js PWA"
                  class="title-img">
-            <hello></hello>
+            <pwa-notes></pwa-notes>
         </main>
     </div>
 </template>
 
 <script>
-  import Hello from './components/Hello'
+  import PwaNotes from './components/pwa-notes'
 
 export default {
     name: 'app',
     components: {
-      Hello
+      PwaNotes
     }
   }
 </script>
