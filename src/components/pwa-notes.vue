@@ -68,7 +68,11 @@
             {
               title: '注意点',
               content: [
-                'service-worker.js 不要缓存,这是控制缓存和更新的唯一凭据,如果它也设置了缓存,则更新会很麻烦'
+                'service-worker.js 不要缓存,这是控制缓存和更新的唯一凭据,如果它也设置了缓存,则更新会很麻烦',
+                '再对 service-worker 的理解上,可以把这种缓存技术,视为对文件的读写操作,尤其是写操作的互斥关系,这样就比较好理解了.',
+                '关于 queryparams , 只能通过对 queryparams 设置白名单的方法来匹配 url, 对于未设置的参数,无法 cache 到主文档',
+                '关于 测试环境,test环境是非 https 的情况,所以我们需要用 Charles 将其转成 https 的然后测试',
+                '关于 是否可以会退到无 service-worker 的版本,待验证后给结论,稍等'
               ]
             }
           ]
