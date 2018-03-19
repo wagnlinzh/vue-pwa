@@ -67,7 +67,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       },
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       chunksSortMode: 'dependency',
-      // serviceWorkerLoader: `<script>${loadMinified(path.join(__dirname, './service-worker-prod.js'))}</script>`
+      serviceWorkerLoader: `<script>${loadMinified(path.join(__dirname, './service-worker-prod.js'))}</script>`
     }),
     // split vendor js into its own file
     new webpack.optimize.CommonsChunkPlugin({
@@ -96,14 +96,14 @@ const webpackConfig = merge(baseWebpackConfig, {
       }
     ]),
     // service worker caching
-    // new SWPrecacheWebpackPlugin({
-    //   cacheId: 'pwa-vue',
-    //   filename: 'service-worker.js',
-    //   staticFileGlobs: ['dist/**/*.{js,html,css}'],
-    //   minify: false,
-    //   stripPrefix: 'dist/',
-    //   ignoreUrlParametersMatching: [/dealId|projectId|poiId/]
-    // })
+    new SWPrecacheWebpackPlugin({
+      cacheId: 'pwa-vue',
+      filename: 'service-worker.js',
+      staticFileGlobs: ['dist/**/*.{js,html,css}'],
+      minify: false,
+      stripPrefix: 'dist/',
+      ignoreUrlParametersMatching: [/dealId|projectId|poiId/]
+    })
   ]
 })
 
