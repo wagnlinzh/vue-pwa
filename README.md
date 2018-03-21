@@ -64,4 +64,5 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 * 关于 测试环境,test 环境是非 https 的情况,所以我们需要用 Charles 将其转成 https 的然后测试
 * 关于 是否可以会退到无 service-worker 的版本,手动删除 service-worker, 从源码和 build 中删除,发布后,对于线上,如果不去手动线上的 service worker 必须等 max-age 过期. 更细: 貌似 max-age 过期依然没有鸟用,因为依然能 catch 到
 * rm service-worker, 看来不能通过删除 service-worker ,需要用 service-worker 的删除特性.尝试一下先
+* 确认可以,通过 service-worker 的 unregister 方法,直接可以删除 service-worker
 * Android 上的发送到桌面之后,无法更新 service worker,感觉是 Android 的问题
